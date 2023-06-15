@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* =====================
+========common css=======
+======================= */
+
+.highlight {
+  color: #e3a446;
+}
+.primary-button {
+  outline: 0;
+  border: 0;
+  padding: 15px 20px;
+  background-image: linear-gradient(90deg, #c79141, #e3a446);
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 7px 0 #a16916;
+  position: relative;
+  top: 0;
+}
+.primary-button:active {
+  top: 5px;
+  box-shadow: 0 2px 0 #a5075e;
+}
+.section-title {
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 2px solid #e3a446;
+  margin: 50px 0;
+}
+a {
+  text-decoration: none;
+  color: #e3a446;
+}
+.card {
+  width: 60%;
+  padding: 30px;
+  margin: 20px auto;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.card i {
+  background-color: #e3a446;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.card h3 {
+  color: #e3a446;
+  font-size: 25px;
+}
+.card p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+.text-field {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 18px;
+  font-family: inherit;
+  border: 1px solid #e3a446;
+}
+img {
+  max-width: 100%;
+}
+/* Header Banner section Start */
+.banner-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.banner-container > div {
+  width: 45%;
+}
+.banner-container .banner-left {
+  margin-right: 50px;
+}
+.banner-container img {
+  width: 60%;
+}
+.banner-right{
+  display: flex;
+  justify-content: center;
+}
+/* Header Banner section End */
+
+/* Features Section Start */
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.features-container > div {
+  width: 40%;
+  margin: 20px 0;
+}
+/* Features Section End */
+
+/* Gallery section Start */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.gallery-container img{
+  border: 3px solid #a16916;
+  width: 100%;
+  height: 200px;
+}
+/* Gallery Section end */
+
+/* Contact-section Star */
+.contact-section{
+  margin-top: 100px;
+}
+.contact-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* Contact-section End */
+
+
+
+/* Responsive Layout */
+@media only screen and (max-width: 575px) {
+  body {
+    padding: 10px;
+  }
+  .banner-container > div {
+    width: 100%;
+  }
+  .banner-container .banner-left {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  /* Features */
+  .features-container > div {
+    width: 90%;
+  }
+  /* Gallery */
+  .gallery-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* Contact */
+  .contact-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
